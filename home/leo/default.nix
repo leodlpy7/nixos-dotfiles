@@ -3,6 +3,10 @@
   pkgs,
   ...
 }: {
+  imports = [
+    ./programs.nix
+  ];
+
   home = {
     stateVersion = "25.05";
     username = "leo";
