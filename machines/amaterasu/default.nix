@@ -6,7 +6,10 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [ 
+      ../share/kde.nix
+
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
