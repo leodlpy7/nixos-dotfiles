@@ -8,6 +8,7 @@
   imports =
     [ 
       ../share/kde.nix
+      ../share/wifi.nix
 
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -72,6 +73,14 @@
     libreoffice-still
     texliveFull
   ];
+
+  # important for sops
+  services.openssh.enable = true;
+
+  # important for sops if key is derived from ssh
+  sops.age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
+  sops.age.keyFile = "${config.users.users.leo.home}/.config/sops/age/keys.txt";
+  sops.age.generateKey = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
