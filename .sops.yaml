@@ -1,0 +1,7 @@
+keys:
+  - &leo_amaterasu age1t9rnafqpl8ymrn5mnzkjy9frhz854ukv9dak4jqqz48psn72ed6sq75j26
+creation_rules:
+  - path_regex: res/secrets/*
+    key_groups:
+      - age:
+        - *leo_amaterasu
