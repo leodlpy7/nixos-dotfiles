@@ -8,9 +8,10 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-easyroam.url = "github:0x5a4/nix-easyroam";
   };
 
-  outputs = inputs@{self, nixpkgs, home-manager, sops-nix, ...}: {
+  outputs = inputs@{self, nixpkgs, home-manager, sops-nix, nix-easyroam, ...}: {
     nixosConfigurations.amaterasu = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -24,6 +25,7 @@
 	  };
 	}
 	sops-nix.nixosModules.sops
+	nix-easyroam.nixosModules.nix-easyroam
       ];
     };
   };

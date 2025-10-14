@@ -18,6 +18,24 @@
         "type": "github"
       }
     },
+    "nix-easyroam": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1760440988,
+        "narHash": "sha256-cvkwPde9hna9czzV62oA9RZHq60dksjx7a9a5nGENPo=",
+        "owner": "0x5a4",
+        "repo": "nix-easyroam",
+        "rev": "5f3d9c22f19439c3a0a39507fd6469bf78bf56c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "0x5a4",
+        "repo": "nix-easyroam",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1759036355,
@@ -36,6 +54,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1735268880,
+        "narHash": "sha256-7QEFnKkzD13SPxs+UFR5bUFN2fRw+GlL0am72ZjNre4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "7cc0bff31a3a705d3ac4fdceb030a17239412210",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1759386674,
         "narHash": "sha256-wg1Lz/1FC5Q13R+mM5a2oTV9TA9L/CHHTm3/PiLayfA=",
         "owner": "nixos",
@@ -53,7 +87,8 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs_2",
+        "nix-easyroam": "nix-easyroam",
+        "nixpkgs": "nixpkgs_3",
         "sops-nix": "sops-nix"
       }
     },

@@ -26,4 +26,21 @@
       };
     };
   };
+
+  # fucking easyroam config
+  sops.secrets.easyroam = {
+    format = "binary";
+    sopsFile = ../../res/secrets/amaterasu.p12;
+  };
+
+  services.easyroam = {
+    enable = true;
+    pkcsFile = config.sops.secrets.easyroam.path;
+    wpa-supplicant = {
+      enable = true;
+      extraConfig = ''
+        priority=5
+      '';
+    };
+  };
 }
