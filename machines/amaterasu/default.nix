@@ -69,6 +69,8 @@
   environment.systemPackages = with pkgs; [
     neovim
     git
+    libreoffice-still
+    texliveFull
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
