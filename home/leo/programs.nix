@@ -7,6 +7,6 @@
     firefox
     vlc
     discord
-    signal
+    signal-desktop
   ];
 }

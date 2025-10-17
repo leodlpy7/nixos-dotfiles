@@ -24,6 +24,11 @@
         pskRaw = "ext:LAMBDA_AUF_DEM_E_FELD_PSK";
 	priority = 3;
       };
+      
+      "LevelOne-2.4G" = {
+      	pskRaw = "ext:LEVELONE_PSK";
+	priority = 5;
+      };
     };
   };
 
