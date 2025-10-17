@@ -6,5 +6,7 @@
   home.packages = with pkgs; [
     firefox
     vlc
+    discord
+    signal
   ];
 }
