@@ -29,6 +29,11 @@
       	pskRaw = "ext:LEVELONE_PSK";
 	priority = 5;
       };
+
+      "to huus" = {
+      	pskRaw = "ext:TOHUUS_PSK";
+	priority = 5;
+      };
     };
   };
 
