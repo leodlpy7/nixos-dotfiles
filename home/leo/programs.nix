@@ -8,5 +8,6 @@
     vlc
     discord
     signal-desktop
+    xournalpp
   ];
 }
