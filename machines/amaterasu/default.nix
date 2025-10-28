@@ -67,7 +67,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.leo = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio"];
     shell = pkgs.fish;
   };
 
@@ -82,6 +82,14 @@
     libreoffice-still
     texliveFull
   ];
+
+  # enable audio
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
 
   # important for sops
   services.openssh.enable = true;
