@@ -15,6 +15,11 @@
     secretsFile = config.sops.secrets.wifi.path;
     fallbackToWPA2 = false;
     networks = {
+      Andromeda = {
+      	pskRaw = "ext:ANDROMEDA_PSK";
+	priority = 1;
+      };
+
       HHUD-Y = {
         pskRaw = "ext:HUDDY_PSK";
 	priority = 3;
