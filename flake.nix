@@ -23,15 +23,15 @@
       modules = [
       	./machines/amaterasu
         home-manager.nixosModules.home-manager
-	{
-	  home-manager = {
-	    useUserPackages = true;
-	    useGlobalPkgs = true;
-	    users.leo = import ./home/leo/default.nix;
-	  };
-	}
-	sops-nix.nixosModules.sops
-	nix-easyroam.nixosModules.nix-easyroam
+        {
+          home-manager = {
+            useUserPackages = true;
+            useGlobalPkgs = true;
+            users.leo = import ./home/leo/default.nix;
+          };
+        }
+        sops-nix.nixosModules.sops
+        nix-easyroam.nixosModules.nix-easyroam
       ];
     };
   };
