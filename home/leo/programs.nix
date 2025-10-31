@@ -9,5 +9,6 @@
     discord
     signal-desktop
     xournalpp
+    bat
   ];
 }
