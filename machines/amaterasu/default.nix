@@ -8,6 +8,7 @@
   imports =
     [ 
       ../share/kde.nix
+      ../share/terminal.nix
       ../share/wifi.nix
 
       # Include the results of the hardware scan.
@@ -71,7 +72,6 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    neovim
     git
     libreoffice-still
     texliveFull
