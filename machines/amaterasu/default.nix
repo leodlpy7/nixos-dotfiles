@@ -8,6 +8,7 @@
   imports =
     [ 
       ../share/kde.nix
+      ../share/programs.nix
       ../share/terminal.nix
       ../share/wifi.nix
 
