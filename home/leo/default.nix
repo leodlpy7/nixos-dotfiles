@@ -3,9 +3,7 @@
   pkgs,
   ...
 }: {
-  imports = [
-    ./programs.nix
-  ];
+  imports = [ ./programs.nix ];
 
   home = {
     stateVersion = "25.05";
