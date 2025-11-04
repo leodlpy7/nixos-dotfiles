@@ -9,6 +9,7 @@
     discord
     signal-desktop
     xournalpp
+    prismlauncher
   ];
 
   programs.bat = {
