@@ -1,6 +1,9 @@
 { ... }:
 {
-  imports = [ ./navigation.nix ];
+  imports = [
+    ./navigation.nix
+    ./options.nix
+  ];
 
   globals.mapleader = " ";
 }
