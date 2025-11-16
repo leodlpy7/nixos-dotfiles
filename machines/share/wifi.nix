@@ -15,29 +15,34 @@
     secretsFile = config.sops.secrets.wifi.path;
     fallbackToWPA2 = false;
     networks = {
+      "Sgr A*" = {
+        pskRaw = "ext:SGR_A_STAR_PSK";
+        priority = 5;
+      };
+
       Andromeda = {
       	pskRaw = "ext:ANDROMEDA_PSK";
-	priority = 1;
+        priority = 1;
       };
 
       HHUD-Y = {
         pskRaw = "ext:HUDDY_PSK";
-	priority = 3;
+        priority = 3;
       };
 
       LambdaAufDemEFeld = {
         pskRaw = "ext:LAMBDA_AUF_DEM_E_FELD_PSK";
-	priority = 3;
+        priority = 3;
       };
       
       "LevelOne-2.4G" = {
       	pskRaw = "ext:LEVELONE_PSK";
-	priority = 5;
+        priority = 5;
       };
 
       "to huus" = {
       	pskRaw = "ext:TOHUUS_PSK";
-	priority = 5;
+        priority = 5;
       };
     };
   };
