@@ -10,6 +10,7 @@
     signal-desktop
     xournalpp
     prismlauncher
+    gnucash
   ];
 
   programs.bat = {
