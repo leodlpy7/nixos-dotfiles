@@ -11,6 +11,7 @@
     xournalpp
     prismlauncher
     gnucash
+    nautilus
   ];
 
   programs.bat = {
