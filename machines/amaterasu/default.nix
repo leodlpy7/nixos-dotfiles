@@ -64,7 +64,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.leo = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "audio"];
+    extraGroups = [ "networkmanager" "wheel" "audio" "wpa_supplicant"];
     shell = pkgs.fish;
   };
 

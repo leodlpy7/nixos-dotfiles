@@ -7,11 +7,13 @@
   sops.secrets.wifi = {
     format = "binary";
     sopsFile = ../../res/secrets/wifi;
+    group = "wpa_supplicant";
+    mode = "0646";
   };
 
   networking.wireless = {
     enable = true;
-    userControlled.enable = true;
+    userControlled = true;
     secretsFile = config.sops.secrets.wifi.path;
     fallbackToWPA2 = false;
     networks = {
